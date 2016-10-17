@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import del from 'del';
-import gutil from 'gulp-util';
-import runsequence from 'run-sequence';
+// import * as gutil from 'gulp-util';
+import * as runSequence from 'run-sequence';
 
 const paths = {
   src: {
@@ -29,4 +29,8 @@ gulp.task('dist:misc', () =>
 
 gulp.task('dist:clean', () =>
   del(paths.dist)
+);
+
+gulp.task('dist', () =>
+  runSequence('dist:clean', ['dist:css', 'dist:js', 'dist:misc'])
 );
