@@ -1,0 +1,11 @@
+{
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": ["**/gulpfile*"], "optionalDependencies": false, "peerDependencies": false}]
+    }
+}

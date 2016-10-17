@@ -1,0 +1,21 @@
+# Distribution folders
+dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Npm dependecies
+node_modules
+.npm
+
+# Random useless files
+.eslintcache
+*.tgz
+
+# Everything semantic-ui except theme configuration
+semantic/*
+!semantic/src
+semantic/src/*
+!semantic/src/theme.config
