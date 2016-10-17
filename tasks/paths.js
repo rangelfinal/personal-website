@@ -6,6 +6,10 @@ export default
         js: 'semantic/dist/sematic.min.js',
         misc: 'semantic/dist/themes/**',
       },
-      dist: 'dist/',
+      dist: {
+        base: 'dist/',
+        css: 'dist/css/',
+        js: 'dist/js/',
+      },
     },
   };
