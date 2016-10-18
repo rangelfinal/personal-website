@@ -11,3 +11,5 @@ gulp.task('js', () =>
     .pipe(babel({ presets: ['es2015'] }))
     .pipe(gulp.dist(paths.dist.js))
 );
+
+// TODO: Minimify

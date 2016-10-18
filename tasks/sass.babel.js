@@ -10,3 +10,5 @@ gulp.task('sass', () =>
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dist.css))
 );
+
+// TODO: Uglify
