@@ -1,7 +1,10 @@
 $icon-font-path: '../fonts/';
 
 // bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+// bower:css
+@import "bower_components/semantic/dist/semantic.css";
 // endbower
 
 .browserupgrade {
@@ -58,7 +61,7 @@ body {
     padding: 14px 24px;
   }
 }
-
+npm install semantic-ui-css
 /* Supporting marketing content */
 .marketing {
   margin: 40px 0;
