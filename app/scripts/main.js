@@ -9,8 +9,8 @@ if($(window).width() > 600) {
          requestAnimationFrame(function() {
            $('.following.bar')
              .addClass('light fixed')
-             //.find('.menu')
-               //.removeClass('inverted')
+             .find('.menu')
+               .removeClass('inverted')
            ;
            $('.following .additional.item')
              .transition('scale in', 750)
@@ -21,13 +21,24 @@ if($(window).width() > 600) {
          requestAnimationFrame(function() {
            $('.following.bar')
              .removeClass('light fixed')
-             //.find('.menu')
-               //.addClass('inverted')
-               //.find('.additional.item')
-                 //.transition('hide')
            ;
          });
        }
      })
    ;
  };
+
+$('document').ready(() => {
+
+  console.log()
+
+  let pattern = Trianglify({
+    height: $('.masthead.segment').height(),
+    width: $('.masthead.segment').width(),
+    cell_size: 50,
+    x_colors: 'PuBu'
+  });
+
+  $('.masthead.segment').css({'background-image': 'url(' + pattern.png() + ')'});
+
+});
